@@ -22,8 +22,8 @@ sub gen_sorter {
             my $a_is_perl = $a eq 'perl' ? 1:0;
             my $b_is_perl = $b eq 'perl' ? 1:0;
 
-            my $a_is_pragma = $a =~ /\A[a-z]/;
-            my $b_is_pragma = $b =~ /\A[a-z]/;
+            my $a_is_pragma = $a =~ /\A[a-z]/ ? 1:0;
+            my $b_is_pragma = $b =~ /\A[a-z]/ ? 1:0;
 
             $cmp =
                 ($b_is_perl <=> $a_is_perl) ||
