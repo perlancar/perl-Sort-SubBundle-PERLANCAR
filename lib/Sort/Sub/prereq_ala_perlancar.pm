@@ -1,4 +1,4 @@
-package Sort::Sub::perlancar_prereq_sort;
+package Sort::Sub::prereq_ala_perlancar;
 
 # DATE
 # VERSION
