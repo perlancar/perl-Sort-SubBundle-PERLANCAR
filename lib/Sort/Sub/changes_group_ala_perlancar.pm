@@ -14,6 +14,7 @@ sub gen_sorter {
 
     Sort::BySpec::cmp_by_spec(
         spec => [
+            '',
             qr/incompatible/i,
             qr/remove|delete/i,
             qr/new|feature/i,
