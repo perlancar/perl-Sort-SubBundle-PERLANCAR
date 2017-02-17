@@ -15,7 +15,7 @@ sub gen_sorter {
     Sort::BySpec::cmp_by_spec(
         spec => [
             '',
-            qr/incompatible/i,
+            qr/break|incompatible/i,
             qr/remove|delete/i,
             qr/new|feature/i,
             qr/enhance/i,
@@ -44,12 +44,23 @@ A Changes file can group its changes entries into groups with headings, e.g.:
 
  - blah blah blah
 
-I sort these group headings according to this principle: put the items that are
-more important that people would want to read first. The groups are thus sorted
-in this order:
+I sort these group headings according to this principle: prioritize the items
+that:
 
- Incompatible changes
- Removed features
- New features
- Enhancements
- Bug fixes
+=over
+
+=item * are more important;
+
+=item * affect users the most;
+
+=item * users would want to know first.
+
+=back
+
+Thus breaking or backward-incompatible changes are put first because they affect
+existing users and in a significant way. Removed features are next, they are
+also basically backward-incompatible changes.
+
+Then come new features. After that, enhancements. Bug fixes currently come last
+(actually bug fixes vary in importance but we currently do not categorize them
+further into subgroups).
