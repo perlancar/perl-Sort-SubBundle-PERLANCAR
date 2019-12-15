@@ -1,11 +1,20 @@
 package Sort::Sub::changes_group_ala_perlancar;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
 use strict;
 use warnings;
+
+sub meta {
+    return {
+        v => 1,
+        summary => 'Sort changes group heading PERLANCAR-style',
+    };
+}
 
 sub gen_sorter {
     require Sort::BySpec;
@@ -26,9 +35,9 @@ sub gen_sorter {
 }
 
 1;
-# ABSTRACT: Sort changes group heading PERLANCAR-style
+# ABSTRACT:
 
-=for Pod::Coverage ^(gen_sorter)$
+=for Pod::Coverage ^(gen_sorter|meta)$
 
 =head1 DESCRIPTION
 

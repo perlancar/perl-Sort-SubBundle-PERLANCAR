@@ -1,11 +1,20 @@
 package Sort::Sub::prereq_ala_perlancar;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
 use strict;
 use warnings;
+
+sub meta {
+    return {
+        v => 1,
+        summary => 'Sort prereqs PERLANCAR-style',
+    };
+}
 
 sub gen_sorter {
     my ($is_reverse, $is_ci) = @_;
@@ -36,9 +45,9 @@ sub gen_sorter {
 }
 
 1;
-# ABSTRACT: Sort prereqs PERLANCAR-style
+# ABSTRACT:
 
-=for Pod::Coverage ^(gen_sorter)$
+=for Pod::Coverage ^(gen_sorter|meta)$
 
 =head1 DESCRIPTION
 
@@ -50,4 +59,4 @@ Case-sensitive option is ignored. Sorting is always done using the
 abovementioned rule.
 
 
-=head1 SEE ALSO
+=head1 append:SEE ALSO
