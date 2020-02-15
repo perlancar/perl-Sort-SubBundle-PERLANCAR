@@ -62,6 +62,7 @@ our $SORT_SPEC = [
     'SOURCE',
     qr/^.+'S BUGS$/i, # in a forked module, i put the original module's BUGS in ORIGMODULE'S BUGS
     'BUGS',
+    'GOTCHAS',
     'SEE ALSO',
 
     # author & copyright
