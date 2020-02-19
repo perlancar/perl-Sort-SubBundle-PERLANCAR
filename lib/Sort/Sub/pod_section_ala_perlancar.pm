@@ -1,4 +1,4 @@
-package Sort::Sub::pod_sections_ala_perlancar;
+package Sort::Sub::pod_section_ala_perlancar;
 
 # AUTHORITY
 # DATE
@@ -62,7 +62,7 @@ our $SORT_SPEC = [
     'SOURCE',
     qr/^.+'S BUGS$/i, # in a forked module, i put the original module's BUGS in ORIGMODULE'S BUGS
     'BUGS',
-    'GOTCHAS',
+    'GOTCHAS', 'CAVEATS',
     'SEE ALSO',
 
     # author & copyright
