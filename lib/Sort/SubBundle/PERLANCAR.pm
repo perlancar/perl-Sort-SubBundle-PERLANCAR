@@ -1,4 +1,4 @@
-package PERLANCAR::Sort::Sub;
+package Sort::SubBundle::PERLANCAR;
 
 # AUTHORITY
 # DATE
