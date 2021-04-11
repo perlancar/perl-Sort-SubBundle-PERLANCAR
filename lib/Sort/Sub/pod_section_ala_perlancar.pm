@@ -20,6 +20,10 @@ our $SORT_SPEC = [
     # main content
     'DESCRIPTION',
 
+    # Acme::CPANModules::*
+    "ACME::CPANMODULES ENTRIES",
+    "ACME::CPANMODULES FEATURE COMPARISON MATRIX",
+
     # Bencher::Scenario::*
     'BENCHMARKED MODULES',
     'BENCHMARK PARTICIPANTS',
