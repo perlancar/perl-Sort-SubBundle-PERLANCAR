@@ -10,15 +10,19 @@ use strict;
 use warnings;
 
 our $SORT_SPEC = [
+    # ORIGINAL XXX are for forked modules, where the ORIGINAL XXX sections are
+    # the sections from the original (forked) module, and the XXX sections are
+    # for the new module (the fork).
+
     # preamble
     'NAME',
     'SPECIFICATION VERSION',
     'VERSION',
     'DEPRECATION NOTICE',
-    'SYNOPSIS',
+    'SYNOPSIS', 'ORIGINAL SYNOPSIS',
 
     # main content
-    'DESCRIPTION',
+    'DESCRIPTION', 'ORIGINAL DESCRIPTION',
 
     # Acme::CPANModules::*
     "ACME::CPANMODULES ENTRIES",
@@ -46,8 +50,8 @@ our $SORT_SPEC = [
     'COMPLETION',
 
     # FAQ (after all content & references)
-    'FAQ',
-    'FAQS',
+    'FAQ', 'ORIGINAL FAQ',
+    'FAQS', 'ORIGINAL FAQS',
 
     # links/pointers (CLI)
     'CONFIGURATION FILE',
@@ -57,24 +61,27 @@ our $SORT_SPEC = [
     'FILES',
 
     # todos
-    'TODO',
-    'TODOS',
+    'TODO', 'ORIGINAL TODO',
+    'TODOS', 'ORIGINAL TODOS',
 
     # links/pointers/extra information
-    'HISTORY',
-    'HOMEPAGE',
-    'SOURCE',
+    'HISTORY', 'ORIGINAL HISTORY',
+    'HOMEPAGE', 'ORIGINAL HOMEPAGE',
+    'SOURCE', 'ORIGINAL SOURCE',
+    'BUGS', 'ORIGINAL BUGS',
     qr/^.+'S BUGS$/i, # in a forked module, i put the original module's BUGS in ORIGMODULE'S BUGS
-    'BUGS',
-    'GOTCHAS', 'CAVEATS',
-    'SEE ALSO',
+    'GOTCHAS',
+    'CAVEATS',
+    'SEE ALSO', 'ORIGINAL SEE ALSO',
 
     # author & copyright
-    qr/^.+'S AUTHORS?$/i, # in a forked module, i put the original module's AUTHOR in ORIGMODULE'S AUTHOR
     qr/^AUTHORS?/,
+    qr/^.+'S AUTHORS?$/i, # in a forked module, i put the original module's AUTHOR in ORIGMODULE'S AUTHOR
+    qr/^ORIGINAL AUTHORS?/,
+
+    'COPYRIGHT AND LICENSE', 'ORIGINAL COPYRIGHT AND LICENSE',
+    'COPYRIGHT', 'ORIGINAL COPYRIGHT',
     qr/^.+'S COPYRIGHT( AND LICENSE)?$/i, # in a forked module, i put the original module's COPYRIGHT in ORIGMODULE'S COPYRIGHT
-    'COPYRIGHT AND LICENSE',
-    'COPYRIGHT',
 ];
 
 sub meta {
