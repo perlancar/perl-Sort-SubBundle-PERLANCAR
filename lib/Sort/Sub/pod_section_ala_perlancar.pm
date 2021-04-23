@@ -74,6 +74,10 @@ our $SORT_SPEC = [
     'CAVEATS',
     'SEE ALSO', 'ORIGINAL SEE ALSO',
 
+    # credits
+    'CREDITS', 'ORIGINAL CREDITS',
+    'THANKS', 'ORIGINAL THANKS',
+
     # author & copyright
     qr/^AUTHORS?/,
     qr/^.+'S AUTHORS?$/i, # in a forked module, i put the original module's AUTHOR in ORIGMODULE'S AUTHOR
