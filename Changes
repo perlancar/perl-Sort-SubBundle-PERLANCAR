@@ -1,3 +1,10 @@
+0.087   2021-05-01  Released-By: PERLANCAR; Urgency: medium
+
+	- Tweak POD sections: recognize ORIGINAL LICENSE, remove FOO'S
+	  (BUGS|AUTHORS|etc) because I am using ORIGINAL (BUGS|AUTHORS|etc)
+	  nowadays.
+
+
 0.086   2021-04-23  Released-By: PERLANCAR; Urgency: medium
 
 	- [sub pod_section_ala_perlancar] Add CREDITS/THANKS sections.
