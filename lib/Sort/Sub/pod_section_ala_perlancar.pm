@@ -69,7 +69,6 @@ our $SORT_SPEC = [
     'HOMEPAGE', 'ORIGINAL HOMEPAGE',
     'SOURCE', 'ORIGINAL SOURCE',
     'BUGS', 'ORIGINAL BUGS',
-    qr/^.+'S BUGS$/i, # in a forked module, i put the original module's BUGS in ORIGMODULE'S BUGS
     'GOTCHAS',
     'CAVEATS',
     'SEE ALSO', 'ORIGINAL SEE ALSO',
@@ -80,12 +79,11 @@ our $SORT_SPEC = [
 
     # author & copyright
     qr/^AUTHORS?/,
-    qr/^.+'S AUTHORS?$/i, # in a forked module, i put the original module's AUTHOR in ORIGMODULE'S AUTHOR
     qr/^ORIGINAL AUTHORS?/,
 
     'COPYRIGHT AND LICENSE', 'ORIGINAL COPYRIGHT AND LICENSE',
     'COPYRIGHT', 'ORIGINAL COPYRIGHT',
-    qr/^.+'S COPYRIGHT( AND LICENSE)?$/i, # in a forked module, i put the original module's COPYRIGHT in ORIGMODULE'S COPYRIGHT
+    'LICENSE', 'ORIGINAL LICENSE',
 ];
 
 sub meta {
