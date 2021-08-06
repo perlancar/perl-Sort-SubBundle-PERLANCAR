@@ -77,9 +77,11 @@ our $SORT_SPEC = [
     'CREDITS', 'ORIGINAL CREDITS',
     'THANKS', 'ORIGINAL THANKS',
 
-    # author & copyright
+    # author, contributors, & copyright
     qr/^AUTHORS?/,
     qr/^ORIGINAL AUTHORS?/,
+
+    'CONTRIBUTORS',
 
     'COPYRIGHT AND LICENSE', 'ORIGINAL COPYRIGHT AND LICENSE',
     'COPYRIGHT', 'ORIGINAL COPYRIGHT',
