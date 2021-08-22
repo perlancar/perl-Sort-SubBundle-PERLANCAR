@@ -14,6 +14,7 @@ our $SORT_SPEC = [
     # the sections from the original (forked) module, and the XXX sections are
     # for the new module (the fork).
 
+
     # preamble
     'NAME',
     'SPECIFICATION VERSION',
@@ -21,12 +22,15 @@ our $SORT_SPEC = [
     'DEPRECATION NOTICE',
     'SYNOPSIS', 'ORIGINAL SYNOPSIS',
 
+
     # main content
     'DESCRIPTION', 'ORIGINAL DESCRIPTION',
+
 
     # Acme::CPANModules::*
     "ACME::CPANMODULES ENTRIES",
     "ACME::CPANMODULES FEATURE COMPARISON MATRIX",
+
 
     # Bencher::Scenario::*
     'BENCHMARKED MODULES',
@@ -34,26 +38,34 @@ our $SORT_SPEC = [
     'BENCHMARK DATASETS',
     'SAMPLE BENCHMARK RESULTS',
 
+
     # everything else that are uncategorized go here
     sub { 1 },
+
 
     # reference section
     'FUNCTIONS',
     'ATTRIBUTES',
     'METHODS',
 
+
     # reference section (CLI)
     'SUBCOMMANDS',
     'OPTIONS',
 
-    'IMPLEMENTATION NOTES', # from freebsd
+
+    # from bsd
+    'IMPLEMENTATION NOTES',
+
 
     # other content (CLI)
     'COMPLETION',
 
+
     # FAQ (after all content & references)
     'FAQ', 'ORIGINAL FAQ',
     'FAQS', 'ORIGINAL FAQS',
+
 
     # links/pointers (CLI)
     'CONFIGURATION FILE',
@@ -62,28 +74,41 @@ our $SORT_SPEC = [
     'ENVIRONMENT VARIABLES',
     'FILES',
 
-    'EXIT STATUS', # from freebsd
 
-    'EXAMPLES', # from freebsd
+    # exit status, diagnostics, errors. from bsd
+    'EXIT STATUS',
+    'DIAGNOSTICS',
+    # RETURN VALUE # for syscall
+    # ERRORS # for syscall
+
+
+    # examples, from bsd
+    'EXAMPLES',
+
 
     # todos
     'TODO', 'ORIGINAL TODO',
     'TODOS', 'ORIGINAL TODOS',
 
-    # links/pointers/extra information
-    'HISTORY', 'ORIGINAL HISTORY',
+
+    # links
     'HOMEPAGE', 'ORIGINAL HOMEPAGE',
     'SOURCE', 'ORIGINAL SOURCE',
-    'BUGS', 'ORIGINAL BUGS',
-    'GOTCHAS',
-    'CAVEATS',
     'SEE ALSO', 'ORIGINAL SEE ALSO',
 
-    # credits
+
+    # standards, from bsd
+    'STANDARDS',
+
+
+    # history
+    'HISTORY', 'ORIGINAL HISTORY',
+
+
+    # credits, authors, contributors, & copyright
     'CREDITS', 'ORIGINAL CREDITS',
     'THANKS', 'ORIGINAL THANKS',
 
-    # author, contributors, & copyright
     qr/^AUTHORS?/,
     qr/^ORIGINAL AUTHORS?/,
 
@@ -94,6 +119,12 @@ our $SORT_SPEC = [
     'COPYRIGHT AND LICENSE', 'ORIGINAL COPYRIGHT AND LICENSE',
     'COPYRIGHT', 'ORIGINAL COPYRIGHT',
     'LICENSE', 'ORIGINAL LICENSE',
+
+
+    # bugs/caveats
+    'BUGS', 'ORIGINAL BUGS',
+    'GOTCHAS',
+    'CAVEATS',
 ];
 
 sub meta {
