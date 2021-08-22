@@ -46,6 +46,8 @@ our $SORT_SPEC = [
     'SUBCOMMANDS',
     'OPTIONS',
 
+    'IMPLEMENTATION NOTES', # from freebsd
+
     # other content (CLI)
     'COMPLETION',
 
@@ -59,6 +61,10 @@ our $SORT_SPEC = [
     'ENVIRONMENT',
     'ENVIRONMENT VARIABLES',
     'FILES',
+
+    'EXIT STATUS', # from freebsd
+
+    'EXAMPLES', # from freebsd
 
     # todos
     'TODO', 'ORIGINAL TODO',
