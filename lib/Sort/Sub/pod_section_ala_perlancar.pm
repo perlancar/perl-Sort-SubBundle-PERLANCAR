@@ -1,13 +1,13 @@
 package Sort::Sub::pod_section_ala_perlancar;
 
+use 5.010001;
+use strict;
+use warnings;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use 5.010001;
-use strict;
-use warnings;
 
 our $SORT_SPEC = [
     # ORIGINAL XXX are for forked modules, where the ORIGINAL XXX sections are
@@ -117,6 +117,7 @@ our $SORT_SPEC = [
     'CONTRIBUTING',
 
     'COPYRIGHT AND LICENSE', 'ORIGINAL COPYRIGHT AND LICENSE',
+    'COPYRIGHT & LICENSE', 'ORIGINAL COPYRIGHT & LICENSE',
     'COPYRIGHT', 'ORIGINAL COPYRIGHT',
     'LICENSE', 'ORIGINAL LICENSE',
 

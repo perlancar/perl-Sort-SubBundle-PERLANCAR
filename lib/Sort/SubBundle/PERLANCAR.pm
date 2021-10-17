@@ -1,5 +1,7 @@
 package Sort::SubBundle::PERLANCAR;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
