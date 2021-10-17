@@ -20,7 +20,7 @@ sub gen_sorter {
     my ($is_reverse, $is_ci) = @_;
 
     sub {
-        no strict 'refs';
+        no strict 'refs'; ## no critic: TestingAndDebugging::ProhibitNoStrict
 
         my $caller = caller();
         my $a = @_ ? $_[0] : ${"$caller\::a"};
