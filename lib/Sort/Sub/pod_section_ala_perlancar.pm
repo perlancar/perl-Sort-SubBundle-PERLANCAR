@@ -20,6 +20,7 @@ our $SORT_SPEC = [
     'SPECIFICATION VERSION',
     'VERSION',
     'DEPRECATION NOTICE',
+    'SAH SCHEMAS', 'SAH SCHEMA DEFINITION', # Sah::Schema::*, Sah::Schemas::*
     'SYNOPSIS', 'ORIGINAL SYNOPSIS',
 
 
